@@ -1,0 +1,86 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Bot Codes Walkthrough",
+  "steps": [
+    {
+      "file": "bot/src/helpCommandHandler.ts",
+      "description": "Command handler for Help Command. This will show the help in an Adaptive Card. There is also a Prompt in the Teams Bot for `help` commannd",
+      "line": 15,
+      "title": "Help Command Handler"
+    },
+    {
+      "file": "templates/appPackage/manifest.template.json",
+      "description": "Commandlist for `help` is added which will be helpful for the users",
+      "line": 45,
+      "title": "Commandlist for help"
+    },
+    {
+      "file": "bot/src/internal/initialize.ts",
+      "description": "This is the command handler for invoking the QnA Maker. You can notice that it has command propert `ssoCommands`. This is done to ensure that Access token for the current user is generated",
+      "line": 24,
+      "title": "Handler for QnA"
+    },
+    {
+      "file": "bot/src/faqQnaCommandHandler.ts",
+      "description": "Command handler for responding to the question. User can type anything and the question will be sending back to QnA Maker REST API",
+      "line": 24,
+      "title": "Command handler definition for QnA"
+    },
+    {
+      "file": "bot/src/internal/initialize.ts",
+      "description": "Graph Permission level `Graph.Read` is used. This is needed to ensure the access token in the Azure Function Layer",
+      "line": 18,
+      "title": "Graph API Permission for SSO"
+    },
+    {
+      "file": "bot/src/faqQnaCommandHandler.ts",
+      "description": "You can see that the trigger pattern is `.` which means anything typed will be triggered to this handler",
+      "line": 26,
+      "title": "Trigger Pattern for QnA"
+    },
+    {
+      "file": "bot/src/services/services.ts",
+      "description": "Access Token Generated from Teams Toolkit will be sent along with the Azure Function API. This could be authenticated at the Azure Function Layer.",
+      "line": 28,
+      "title": "Sending Access Token to Azure Function"
+    },
+    {
+      "file": "bot/src/faqQnaCommandHandler.ts",
+      "description": "Calling the Method in the Service Layer which in-turn will call the Azure Function",
+      "line": 41,
+      "title": "Invoking Service Layer for calling Azure Function"
+    },
+    {
+      "file": "bot/src/faqQnaCommandHandler.ts",
+      "description": "Util Method which will refine the Response Received which will be there in `azQnAResponse`. Depending upon the Business logic, this could be modified and enhanced",
+      "line": 42,
+      "title": "Formatting the Response of Azure Function"
+    },
+    {
+      "file": "bot/src/utils/util.ts",
+      "description": "This will take the first result of the Answer Response List and will show the result",
+      "line": 15,
+      "title": "Getting the first answer response"
+    },
+    {
+      "file": "bot/src/utils/util.ts",
+      "description": "Generic Response will be shown as Text",
+      "line": 19,
+      "title": "Generic No Answer Response"
+    },
+    {
+      "file": "bot/src/models/IQnARequestProperties.ts",
+      "description": "Interface for Request Properties. Will add Question and the Top Result",
+      "line": 12,
+      "title": "Request Properties"
+    },
+    {
+      "file": "bot/src/models/IQnAResponse.ts",
+      "description": "Response Interface for the Question asked",
+      "line": 39,
+      "title": "Response Properties"
+    }
+  ],
+  "description": "This is the tour which explains on various codes in the Teams Bot Layer",
+  "isPrimary": true
+}

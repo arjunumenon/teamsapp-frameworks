@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Azure Function Tours",
+  "steps": [
+    {
+      "file": "api/getLangStudioQnAResponse/index.ts",
+      "description": "Service Layer for calling the Azure Function",
+      "line": 101
+    },
+    {
+      "file": "api/getLangStudioQnAResponse/services/services.ts",
+      "description": "Service Method which calls the Azure Function",
+      "line": 21
+    },
+    {
+      "file": "api/getLangStudioQnAResponse/services/services.ts",
+      "description": "Configurations are added so that it takes from the App Settings of the environment variable",
+      "line": 23
+    },
+    {
+      "file": "api/.env.teamsfx.local",
+      "description": "Environment variable for `QnA EndPoint`, `Project` and `Key`",
+      "line": 12
+    },
+    {
+      "file": "templates/azure/provision/azureFunctionApi.bicep",
+      "description": "Settings will be added as App Settings when provisioned",
+      "line": 64
+    }
+  ]
+}

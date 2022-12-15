@@ -1,0 +1,52 @@
+{
+    "solution": {
+        "provisionSucceeded": true,
+        "teamsAppTenantId": "095efa67-57fa-40c7-b7cc-e96dc3e5780c",
+        "subscriptionId": "9f6c8d04-7a32-46d1-86f2-37766420bee0",
+        "subscriptionName": "Visual Studio Enterprise Subscription",
+        "tenantId": "095efa67-57fa-40c7-b7cc-e96dc3e5780c",
+        "needCreateResourceGroup": false,
+        "resourceGroupName": "Teams-Dev-TCS",
+        "location": "eastus",
+        "resourceNameSuffix": "f23774"
+    },
+    "fx-resource-appstudio": {
+        "tenantId": "095efa67-57fa-40c7-b7cc-e96dc3e5780c",
+        "teamsAppId": "bd0a13a8-ced3-4ee4-bced-55d35f4a4a99"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "6a717492-8400-4c09-be61-48777ab3a88f",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "b09f49bf-1b50-4f2a-a9a9-145bc863a1b3",
+        "oauth2PermissionScopeId": "9a472590-09af-44a0-9280-e11e958d7c1d",
+        "tenantId": "095efa67-57fa-40c7-b7cc-e96dc3e5780c",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/095efa67-57fa-40c7-b7cc-e96dc3e5780c",
+        "applicationIdUris": "api://botid-228e3c09-3df7-48ee-bac5-e33cf462e0ed",
+        "botId": "228e3c09-3df7-48ee-bac5-e33cf462e0ed",
+        "botEndpoint": "https://langstudiofaqdevbot.azurewebsites.net"
+    },
+    "fx-resource-bot": {
+        "botId": "228e3c09-3df7-48ee-bac5-e33cf462e0ed",
+        "botPassword": "{{fx-resource-bot.botPassword}}",
+        "skuName": "B1",
+        "siteName": "langstudiofaqdevbot",
+        "domain": "langstudiofaqdevbot.azurewebsites.net",
+        "appServicePlanName": "langstudiofaqdevbot",
+        "resourceId": "/subscriptions/9f6c8d04-7a32-46d1-86f2-37766420bee0/resourceGroups/Teams-Dev-TCS/providers/Microsoft.Web/sites/langstudiofaqdevbot",
+        "siteEndpoint": "https://langstudiofaqdevbot.azurewebsites.net"
+    },
+    "fx-resource-identity": {
+        "identityName": "langstudiofaqdev",
+        "identityResourceId": "/subscriptions/9f6c8d04-7a32-46d1-86f2-37766420bee0/resourceGroups/Teams-Dev-TCS/providers/Microsoft.ManagedIdentity/userAssignedIdentities/langstudiofaqdev",
+        "identityClientId": "19a1b3f9-a9fa-402c-9e01-a4e2393675b5"
+    },
+    "fx-resource-function": {
+        "sku": "B1",
+        "appName": "langstudiofaqdevapi",
+        "domain": "langstudiofaqdevapi.azurewebsites.net",
+        "appServicePlanName": "langstudiofaqdevapi",
+        "functionAppResourceId": "/subscriptions/9f6c8d04-7a32-46d1-86f2-37766420bee0/resourceGroups/Teams-Dev-TCS/providers/Microsoft.Web/sites/langstudiofaqdevapi",
+        "functionEndpoint": "https://langstudiofaqdevapi.azurewebsites.net"
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "provisionParameters": {
+      "value": {
+        "botAadAppClientId": "{{state.teams-bot.botId}}",
+        "botAadAppClientSecret": "{{state.teams-bot.botPassword}}",
+        "botDisplayName": "Language Studio FAQ - DEV",
+        "resourceBaseName": "langstudiofaqdev",
+        "m365ClientId": "{{state.aad-app.clientId}}",
+        "m365ClientSecret": "{{state.aad-app.clientSecret}}",
+        "m365TenantId": "{{state.aad-app.tenantId}}",
+        "m365OauthAuthorityHost": "{{state.aad-app.oauthHost}}"
+      }
+    }
+  }
+}
