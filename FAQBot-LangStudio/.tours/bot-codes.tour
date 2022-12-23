@@ -21,12 +21,6 @@
       "title": "Handler for QnA"
     },
     {
-      "file": "bot/src/faqQnaCommandHandler.ts",
-      "description": "Command handler for responding to the question. User can type anything and the question will be sending back to QnA Maker REST API",
-      "line": 24,
-      "title": "Command handler definition for QnA"
-    },
-    {
       "file": "bot/src/internal/initialize.ts",
       "description": "Graph Permission level `Graph.Read` is used. This is needed to ensure the access token in the Azure Function Layer",
       "line": 18,
@@ -43,6 +37,12 @@
       "description": "Access Token Generated from Teams Toolkit will be sent along with the Azure Function API. This could be authenticated at the Azure Function Layer.",
       "line": 28,
       "title": "Sending Access Token to Azure Function"
+    },
+    {
+      "file": "bot/src/faqQnaCommandHandler.ts",
+      "description": "Command handler for responding to the question. User can type anything and the question will be sending back to QnA Maker REST API",
+      "line": 24,
+      "title": "Command handler definition for QnA"
     },
     {
       "file": "bot/src/faqQnaCommandHandler.ts",
